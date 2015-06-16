@@ -1,0 +1,29 @@
+.post__title {
+	@extend .block-relative;
+
+	&:hover {
+		color: $c-1;
+		text-decoration: underline;
+	}
+
+	&::after {
+		@extend .block-absolute;
+
+		background-color: $c-1;
+		border-radius: 100px;
+		content: '';
+		height: 10px;
+		left: -20px;
+		top: 16px;
+		width: 10px;
+	}
+
+	&:visited {
+		color: $c-g2;
+		text-decoration: underline;
+
+		&::after {
+			background-color: $c-g1;
+		}
+	}
+}

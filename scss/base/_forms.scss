@@ -1,0 +1,34 @@
+::-webkit-input-placeholder {
+   color: rgba($c-b, .6);
+}
+:-moz-placeholder {
+   color: rgba($c-b, .6);  
+}
+::-moz-placeholder {
+   color: rgba($c-b, .6);  
+}
+:-ms-input-placeholder {  
+   color: rgba($c-b, .6);  
+}
+
+input {
+	-webkit-appearance: none;
+	
+	/* Fix autofil in Chrome */
+	&:-webkit-autofill {
+		background-color: #FFFFFF !important;
+		-webkit-box-shadow: 0 0 0 1000px #FFFFFF inset;
+		color: $c-b !important;
+	}
+}
+
+textarea {
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+	resize: none;
+	width: 100%;
+}
+
+
+/* More to come */

@@ -1,0 +1,11 @@
+.footer {
+	color: rgba(#FFFFFF, .6);
+
+	.footer__link {
+		color: rgba(#FFFFFF, .8);
+
+		&:hover {
+			color: rgba(#FFFFFF, 1);
+		}
+	}
+}

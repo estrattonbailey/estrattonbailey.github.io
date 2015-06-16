@@ -1,0 +1,64 @@
+.float-n {
+	float: none;
+}
+.float-l {
+	float: left;
+}
+.float-r {
+	float: right;
+}
+@media (min-width: $breakpoint_xs){
+	.float-n_xs {
+		float: none;
+	}
+	.float-l_xs {
+		float: left;
+	}
+	.float-r_xs {
+		float: right;
+	}
+}
+@media (min-width: $breakpoint_s){
+	.float-n_s {
+		float: none;
+	}
+	.float-l_s {
+		float: left;
+	}
+	.float-r_s {
+		float: right;
+	}	
+}
+@media (min-width: $breakpoint_m){
+	.float-n_m {
+		float: none;
+	}
+	.float-l_m {
+		float: left;
+	}
+	.float-r_m {
+		float: right;
+	}	
+}
+@media (min-width: $breakpoint_l){
+	.float-n_l {
+		float: none;
+	}
+	.float-l_l {
+		float: left;
+	}
+	.float-r_l {
+		float: right;
+	}	
+}
+@media (min-width: $breakpoint_xl){
+	.float-n_xl {
+		float: none;
+	}
+	.float-l_xl {
+		float: left;
+	}
+	.float-r_xl {
+		float: right;
+	}	
+}
