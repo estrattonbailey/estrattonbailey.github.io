@@ -1,9 +1,14 @@
 .post__title {
 	@extend .block-relative;
 
+	color: $c-1;
+
 	&:hover {
-		color: $c-1;
-		text-decoration: underline;
+		color: $c-1d;
+
+		&::after {
+			background-color: $c-1d;
+		}
 	}
 
 	&::after {
@@ -20,7 +25,6 @@
 
 	&:visited {
 		color: $c-g2;
-		text-decoration: underline;
 
 		&::after {
 			background-color: $c-g1;

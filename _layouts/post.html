@@ -1,0 +1,16 @@
+{% include _header.html %}
+	<main class="block padding-a-m padding-a-l_m padding-a-xl_l">
+		<h3 class="c-g3 padding-b-xl">
+			<a href="{{ site.url }}" class="c-1" title="{{name}}">ESTRATTONBAILEY</a>
+			<span class="c-g2"> / </span>
+			<a href="{{ site.url }}/blog" class="c-g3">WRITINGS</a>
+			<span class="c-g2"> / </span>
+			NAMES
+		</h3>
+		<article class="post">
+			<p class="c-g2"><time datetime="{{ page.date | date: "%Y-%m-%d"}}">{{ page.date | date_to_long_string }}</time></p>
+			<h1 class="h0 margin-b-m block-relative">{{ page.title }}</h1>
+			{{ content }}
+		</article>
+	</main>
+{% include _footer.html %}

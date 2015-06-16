@@ -3054,8 +3054,7 @@ h1,
 .h0 {
   font-size: 3.2rem;
   font-weight: 900;
-  line-height: 4rem;
-  margin-bottom: 1.6rem; }
+  line-height: 4rem; }
   @media screen and (min-width: 550px) {
     h1,
     .h1,
@@ -3170,8 +3169,7 @@ a {
   text-decoration: none; }
 
 .link {
-  color: #148ECC;
-  text-decoration: none; }
+  color: #148ECC; }
   .link:hover {
     color: #0f6e9e; }
 
@@ -3296,21 +3294,23 @@ button {
     .footer .footer__link:hover {
       color: white; }
 
-.post__title:hover {
-  color: #148ECC;
-  text-decoration: underline; }
-.post__title::after {
-  background-color: #148ECC;
-  border-radius: 100px;
-  content: '';
-  height: 10px;
-  left: -20px;
-  top: 16px;
-  width: 10px; }
-.post__title:visited {
-  color: #cccccc;
-  text-decoration: underline; }
-  .post__title:visited::after {
-    background-color: #f5f5f5; }
+.post__title {
+  color: #148ECC; }
+  .post__title:hover {
+    color: #0f6e9e; }
+    .post__title:hover::after {
+      background-color: #0f6e9e; }
+  .post__title::after {
+    background-color: #148ECC;
+    border-radius: 100px;
+    content: '';
+    height: 10px;
+    left: -20px;
+    top: 16px;
+    width: 10px; }
+  .post__title:visited {
+    color: #cccccc; }
+    .post__title:visited::after {
+      background-color: #f5f5f5; }
 
 /*# sourceMappingURL=style.css.map */

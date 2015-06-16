@@ -1,0 +1,10 @@
+name: "Gesso"
+description: "A Jekyll Theme"
+author: "@estrattonbailey"
+
+# url: "http://localhost:4000"
+url: "http://estrattonbailey.github.io/estrattonbailey"
+
+exclude: [README.md, scss/, raw/, style.css.map]
+paginate: 8
+permalink: /:title
