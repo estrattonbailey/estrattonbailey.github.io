@@ -1,10 +1,13 @@
-name: "Gesso"
+name: "ESTRATTONBAILEY"
 description: "A Jekyll Theme"
 author: "@estrattonbailey"
 
-# url: "http://localhost:4000"
-url: "http://estrattonbailey.github.io/estrattonbailey"
+url: "http://localhost:4000"
+# url: "http://estrattonbailey.github.io/estrattonbailey"
 
 exclude: [README.md, scss/, raw/, style.css.map]
-paginate: 8
-permalink: /:title
+
+paginate: 2
+paginate_path: writings/page-:num
+
+permalink: writings/:title
