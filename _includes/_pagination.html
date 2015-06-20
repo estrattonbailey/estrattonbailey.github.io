@@ -1,21 +1,21 @@
 {% if paginator.total_pages > 1 %}
-<div class="h4 block bg-c-g2 row">
+<div class="h4 bg-c-g1 block row">
   {% if paginator.previous_page %}
    {% if paginator.previous_page == 1 %}
-      <a href="{{site.url}}/writings" class="c-g2 bg-c-w col s12 s25_m padding-v-s align-center">previous</a>
+      <a href="{{site.url}}/writings" class="c-g3 col s12 s25_m padding-v-s align-center"><i class="icon-arrow-left"></i></a>
     {% else %}
-      <a href="{{ paginator.previous_page_path }}" class="c-g2 bg-c-w col s12 s25_m padding-v-s align-center">previous</a>
+      <a href="{{ paginator.previous_page_path }}" class="c-g3 col s12 s25_m padding-v-s align-center"><i class="icon-arrow-left"></i></a>
     {% endif %}
   {% else %}
-    <div class="c-g2 bg-c-g2 col s12 s25_m padding-v-s align-center">&nbsp;</div>
+    <div class="c-g2 col s12 s25_m padding-v-s align-center">&nbsp;</div>
   {% endif %}
 
-  <div class="c-w col s12 s15_m padding-v-s align-center">{{ paginator.page }} / {{ paginator.total_pages }}</div>
+  <div class="c-g3 col s12 s15_m padding-v-s align-center">{{ paginator.page }} / {{ paginator.total_pages }}</div>
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="c-g2 bg-c-w col s12 s25_m padding-v-s align-center">next</a>
+    <a href="{{ paginator.next_page_path }}" class="c-g3 col s12 s25_m padding-v-s align-center"><i class="icon-arrow-right"></i></a>
   {% else %}
-    <div class="c-g2 bg-c-g2 col s12 s25_m padding-v-s align-center">&nbsp;</div>
+    <div class="c-g2 col s12 s25_m padding-v-s align-center">&nbsp;</div>
   {% endif %}
 </div>
 {% endif %}

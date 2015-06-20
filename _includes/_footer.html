@@ -1,10 +1,69 @@
-<footer class="footer bg-c-4 padding-v-m padding-h-m padding-h-l_m padding-a-xl_l padding-v-m_l">
-	<h4 class="c-w font-w-0">
-		<a class="footer__link margin-r-m margin-v-s" href="http://twitter.com/estrattonbailey" target="_blank">Twitter</a>
-		<a class="footer__link margin-r-m margin-v-s" href="http://facebook.com/astronautpopsicle" target="_blank">Facebook</a>
-		<a class="footer__link margin-r-m margin-v-s" href="http://instagram.com/estrattonbailey" target="_blank">Instagram</a>
-		<a class="footer__link margin-r-m margin-v-s" href="http://github.com/estrattonbailey" target="_blank">Github</a>
-		<a class="footer__link margin-r-m margin-v-s" href="http://dribbble.com/estrattonbailey" target="_blank">Dribbble</a>
-		<a class="footer__link margin-r-m margin-v-s" href="http://soundcloud.com/estrattonbailey" target="_blank">Soundcloud</a>
-	</h4>
+<footer class="footer block">
+	{% include _pagination.html %}
+
+	<div class="bg-c-4 padding-v-m padding-h-m padding-h-l_m padding-a-xl_l padding-v-m_l">
+		<h4 class="c-w font-w-0">
+
+			{% if site.social_map %}
+				<a class="footer__link margin-r-l h3 margin-v-s" href="{{ site.social_map }}" target="_blank"><i class="icon-map"></i></a>
+			{% endif %}
+
+			{% if site.social_website %}
+				<a class="footer__link margin-r-l h3 margin-v-s" href="{{ site.social_website }}" target="_blank"><i class="icon-website"></i></a>
+			{% endif %}
+
+			{% if site.social_twitter %}
+				<a class="footer__link margin-r-l h3 margin-v-s" href="{{ site.social_twitter }}" target="_blank"><i class="icon-twitter"></i></a>
+			{% endif %}
+
+			{% if site.social_facebook %}
+				<a class="footer__link margin-r-l h3 margin-v-s" href="{{ site.social_facebook }}" target="_blank"><i class="icon-facebook"></i></a>
+			{% endif %}
+
+			{% if site.social_instagram %}
+				<a class="footer__link margin-r-l h3 margin-v-s" href="{{ site.social_instagram }}" target="_blank"><i class="icon-instagram"></i></a>
+			{% endif %}
+
+			{% if site.social_github %}
+				<a class="footer__link margin-r-l h3 margin-v-s" href="{{ site.social_github }}" target="_blank"><i class="icon-github"></i></a>
+			{% endif %}
+
+			{% if site.social_dribbble %}
+				<a class="footer__link margin-r-l h3 margin-v-s" href="{{ site.social_dribbble }}" target="_blank"><i class="icon-dribbble"></i></a>
+			{% endif %}
+
+			{% if site.social_soundcloud %}
+				<a class="footer__link margin-r-l h3 margin-v-s" href="{{ site.social_soundcloud }}" target="_blank"><i class="icon-soundcloud"></i></a>
+			{% endif %}
+
+			{% if site.social_youtube %}
+				<a class="footer__link margin-r-l h3 margin-v-s" href="{{ site.social_youtube }}" target="_blank"><i class="icon-youtube"></i></a>
+			{% endif %}
+
+			{% if site.social_vimeo %}
+				<a class="footer__link margin-r-l h3 margin-v-s" href="{{ site.social_vimeo }}" target="_blank"><i class="icon-vimeo"></i></a>
+			{% endif %}
+
+			{% if site.social_flickr %}
+				<a class="footer__link margin-r-l h3 margin-v-s" href="{{ site.social_flickr }}" target="_blank"><i class="icon-flickr"></i></a>
+			{% endif %}
+
+			{% if site.social_foursquare %}
+				<a class="footer__link margin-r-l h3 margin-v-s" href="{{ site.social_foursquare }}" target="_blank"><i class="icon-foursquare"></i></a>
+			{% endif %}
+
+			{% if site.social_pinterest %}
+				<a class="footer__link margin-r-l h3 margin-v-s" href="{{ site.social_pinterest }}" target="_blank"><i class="icon-pinterest"></i></a>
+			{% endif %}
+
+			{% if site.social_tumblr %}
+				<a class="footer__link margin-r-l h3 margin-v-s" href="{{ site.social_tumblr }}" target="_blank"><i class="icon-tumblr"></i></a>
+			{% endif %}
+
+			{% if site.social_googleplus %}
+				<a class="footer__link margin-r-l h3 margin-v-s" href="{{ site.social_googleplus }}" target="_blank"><i class="icon-googleplus"></i></a>
+			{% endif %}
+			
+		</h4>
+	</div>
 </footer>

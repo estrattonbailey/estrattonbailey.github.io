@@ -1,0 +1,56 @@
+.rte {
+    h1, h2, h3, h4, h5, h6, p {
+        max-width: 700px;
+    }
+    h2, h3, h4, h5, h6 {
+        @extend .margin-b-m, .margin-t-l;
+    }
+    .h0 {
+        max-width: 100%;
+    }
+    p {
+        @extend .margin-v-m;
+
+        &:first-of-type {
+            @extend .h3, .type-serif, .font-w-0;
+
+            max-width: 840px;
+        }
+    }
+
+
+    blockquote {
+    }
+    ul, ol {
+        margin: 0 0 1.6rem;
+        padding: 0 0 0 3rem;
+    }
+    li {
+    }
+    pre {
+    	@extend .type-monospace;
+
+        overflow: auto;
+        overflow-y: hidden;
+    }
+    code {
+        @extend .type-monospace;
+    }
+    figure {
+        max-width: 100%;
+
+        img {
+            height: auto !important;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        figcaption {
+            max-width: 500px;
+        }
+    }
+    hr {
+        border: 0;
+        height: 2px;
+    }
+}

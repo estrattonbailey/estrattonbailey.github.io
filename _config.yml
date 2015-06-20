@@ -1,13 +1,44 @@
-name: "ESTRATTONBAILEY"
-description: "A Jekyll Theme"
+# PERSONALIZATION SETTINGS
+# These strings support HTML
 author: "@estrattonbailey"
+title: "ESTRATTONBAILEY"
 
+# SOCIAL SETTINGS
+# Fill these in with your URLs and simply un-comment them to enable
+#
+# social_map: "google maps URL"
+# social_website: "your website URL"
+social_twitter: "http://twitter.com/estrattonbailey"
+social_facebook: "http://facebook.com/astronautpopsicle"
+social_instagram: "http://instagram.com/estrattonbailey"
+social_github: "http://github.com/estrattonbailey"
+social_dribbble: "http://dribbble.com/estrattonbailey"
+social_soundcloud: "http://soundcloud.com/estrattonbailey"
+# social_youtube: "http://youtube.com/estrattonbailey"
+# social_vimeo: "http://vimeo.com/estrattonbailey"
+# social_flickr: "http://flickr.com/estrattonbailey"
+# social_foursquare: "http://foursquare.com/estrattonbailey"
+# social_pinterest: "http://pinterest.com/estrattonbailey"
+# social_tumblr: "http://tumblr.com/estrattonbailey"
+# social_googleplus: "http://google.com/estrattonbailey"
+
+
+
+# # # # # #
+# JEKYLL SETTINGS
+#
+
+# Web Server Settings
 url: "http://localhost:4000"
 # url: "http://estrattonbailey.github.io/estrattonbailey"
 
+# Hide these files from jekyll build process.
 exclude: [README.md, scss/, raw/, style.css.map]
 
+# Pagination settings.
+# More info: http://jekyllrb.com/docs/pagination/
 paginate: 2
 paginate_path: writings/page-:num
 
+# Permalink setting for posts.
 permalink: writings/:title

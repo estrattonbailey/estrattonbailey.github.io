@@ -1,14 +1,8 @@
 .post__title {
 	@extend .block-relative;
 
-	color: $c-1;
-
 	&:hover {
-		color: $c-1d;
-
-		&::after {
-			background-color: $c-1d;
-		}
+		text-decoration: underline;
 	}
 
 	&::after {
