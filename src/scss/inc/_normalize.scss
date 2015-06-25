@@ -206,3 +206,8 @@ html, html a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
+
+a {
+    font: inherit;
+    text-decoration: none;
+}
