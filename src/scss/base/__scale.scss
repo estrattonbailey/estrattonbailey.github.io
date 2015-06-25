@@ -1,0 +1,20 @@
+$scale_base:  2rem;
+$ratio: 2.2;
+
+$scale: (
+	n: 0,
+	xs: calc(#{$scale_base} / ( #{$ratio} * #{$ratio} ) ),
+	s: calc(#{$scale_base} / #{$ratio}),
+	m: $scale_base,
+	l: calc(#{$scale_base} * #{$ratio}),
+	xl: calc(#{$scale_base} * ( #{$ratio} * #{$ratio}) ),
+	xxl: calc(#{$scale_base} * ( #{$ratio} * #{$ratio}) * 2 )
+);
+
+@function s($key) {
+  @if map-has-key($scale, $key) {
+    @return map-get($scale, $key);
+  }
+  @warn "Unknown `#{$key}` in $scale.";
+  @return null;
+}

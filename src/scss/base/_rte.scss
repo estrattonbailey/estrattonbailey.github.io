@@ -3,13 +3,13 @@
         max-width: 700px;
     }
     h2, h3, h4, h5, h6 {
-        @extend .margin-b-m, .margin-t-l;
+        margin: s(l) 0 s(m);
     }
     .h0 {
         max-width: 100%;
     }
     p {
-        @extend .margin-v-m;
+        margin: s(m) 0;
 
         /* Lede */
         &:first-of-type {
@@ -21,14 +21,18 @@
 
     /* Links */
     a {
-        color: $c-1;
+        color: color(1);
     }
 
     /* Pull Quotes */
     blockquote {
-        @extend .margin-v-m, .margin-h-n, .padding-l-s, .padding-l-m_m;
+        margin: s(m) 0;
+        padding-left: s(s);
+        border-left: 4px solid color(1);
 
-        border-left: 4px solid $c-1;
+        @media (min-width: break(m)){
+            padding-left: s(m);
+        }
 
         * {
             @extend .h2;
@@ -37,7 +41,8 @@
 
     /* Lists */
     ul, ol {
-        @extend .margin-b-m, .padding-l-m;
+        margin-bottom: s(m);
+        padding-left: s(m);
     }
     li {
         @extend .p;
@@ -45,13 +50,13 @@
 
     /* Code */
     pre {
-        @extend .padding-v-m, .padding-l-m, .margin-v-m;
         @extend .p, .type-monospace;
-
-        border-left: 4px solid $c-1;
-        background-color: $c-g1;
+        border-left: 4px solid color(1);
+        background-color: color(g1);
+        margin: s(m) 0;
         overflow: auto;
         overflow-y: hidden;
+        padding: s(m) 0 s(m) s(m);
     }
     code {
         @extend .type-monospace;
@@ -61,10 +66,9 @@
     p {
         img {
             @extend .block-relative; 
-            @extend .padding-v-m;
-
-            max-width: 100%;
             height: auto !important;
+            max-width: 100%;
+            padding: s(m);
             width: 100%;
         }
     }
@@ -72,7 +76,6 @@
     figure {
         img {
             @extend .block-relative; 
-
             max-width: 100%;
             height: auto !important;
             width: 100%;
@@ -85,11 +88,10 @@
     /* Horizontal Rule */
     hr {
         @extend .block-relative; 
-        @extend .margin-v-l, .margin-l-n;
-
-        background-color: $c-g1;
+        background-color: color(g1);
         border: 0;
         height: 2px;
+        margin: s(l) 0;
         width: 100px;
     }
 }

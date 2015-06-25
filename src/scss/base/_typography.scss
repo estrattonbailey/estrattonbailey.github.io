@@ -1,10 +1,13 @@
+/*
+ * Typography
+ */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,400,300,800);
 
 html, body {
     @extend .type-sans;
     
     font-size: 62.5%; // Set to 10px
-    color: $c-text;
+    color: color(b);
 }
 .type-sans {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -27,8 +30,9 @@ h1,
     font-size: 3.2rem;
     font-weight: 900;
     line-height: 1.1;
+    margin-bottom: 1.6rem;
 
-    @media screen and (min-width: $breakpoint-s) {
+    @media screen and (min-width: break(s)) {
         font-size: 4.5rem;
     }
 }
@@ -38,7 +42,7 @@ h1,
 
     font-size: 4.5rem;
 
-    @media screen and (min-width: $breakpoint-s) {
+    @media screen and (min-width: break(s)) {
         font-size: 5.5vw;
         line-height: 1.1;
     }
@@ -52,7 +56,7 @@ h2,
     font-weight: 900;
     line-height: 3.3rem;
 
-    @media screen and (min-width: $breakpoint-s) {
+    @media screen and (min-width: break(s)) {
         font-size: 3rem;
         line-height: 1.4;
     }
@@ -66,7 +70,7 @@ h3,
     font-weight: 900;
     line-height: 3rem;
 
-    @media screen and (min-width: $breakpoint-s) {
+    @media screen and (min-width: break(s)) {
         font-size: 2.2rem;
         line-height: 1.4;
     }
@@ -78,7 +82,7 @@ h4,
 
     font-size: 1.8rem;
     font-weight: 900;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 h5,
@@ -114,17 +118,6 @@ p,
 .text-underline {
     text-decoration: underline;
 }
-
-/* Weights */
 .font-w-0 {
     font-weight: 100;
-}
-.font-w-3 {
-    font-weight: 300;
-}
-.font-w-6 {
-    font-weight: 600;
-}
-.font-w-9 {
-    font-weight: 900;
 }

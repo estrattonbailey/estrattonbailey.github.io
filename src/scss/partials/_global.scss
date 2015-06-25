@@ -1,0 +1,10 @@
+.section {
+	padding: s(l) s(m);
+
+	@media (min-width: break(xs)){
+		padding: s(l);
+	}
+	@media (min-width: break(l)){
+		padding: s(xl);
+	}
+}
