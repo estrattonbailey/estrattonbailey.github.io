@@ -4573,4 +4573,7 @@ main {
 .post__title:visited {
   color: #cccccc; }
 
+.post__excerpt {
+  max-width: 700px; }
+
 /*# sourceMappingURL=style.css.map */
