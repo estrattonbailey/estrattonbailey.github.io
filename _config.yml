@@ -29,8 +29,8 @@ social_dribbble: "http://dribbble.com/estrattonbailey"
 #
 
 # Web Server Settings
-url: "http://localhost:4000"
-# url: "http://estrattonbailey.github.io/estrattonbailey"
+# url: "http://localhost:4000"
+url: "http://estrattonbailey.com"
 
 # Hide these files from jekyll build process.
 exclude: [README.md, scss/, raw/, style.css.map]
