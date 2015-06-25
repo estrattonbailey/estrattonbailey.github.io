@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="padding-a-m padding-a-l_m padding-a-xl_l">
+<section class="padding-h-m padding-v-l padding-a-l_xs padding-a-xl_l">
 	<div class="block">
 		<div class="block">
 			<h1 class="padding-b-m h0">
@@ -13,34 +13,30 @@ layout: default
 			<h3 class="font-w-3 block s1 s34_m s23_xl">Eric Bailey is a lover of simplicity and a maker of quality things. He enjoys being a teammate, learning, and seasonal beer offerings. Always from Iowa, currently from NYC.</h3>
 		</div>
 	</div>
-	<div class="grid has-gutter--m padding-v-l">
+	<div class="grid has-gutter--m padding-t-m">
 		<div class="row">
-			<div class="col s1 s12_m s25_l margin-v-m">
+			<div class="col s1 s12_m s25_l margin-t-m">
 				<h3 class="padding-b-s"><a class="c-theme" href="http://startupstockphotos.com" title="Startup Stock Photos">Startup Stock Photos</a></h3>
-				<p>Royalty-free stock photos for the tech community.</p>
+				<p>Royalty-free stock photos for the tech community. Royalty-free stock photos for the tech community. Royalty-free stock photos for the tech community.</p>
 			</div>
-			<div class="col s1 s12_m s25_l margin-v-m">
+			<div class="col s1 s12_m s25_l margin-t-m">
 				<h3 class="padding-b-s"><a class="c-theme" href="http://startupstockphotos.com" title="Startup Stock Photos">SVBSTRATE</a></h3>
 				<p>A low-level CSS framework for building elegantly simple websites.</p>
 			</div>
-			<div class="col s1 s12_m s25_l margin-v-m">
+			<div class="col s1 s12_m s25_l clear-l_m margin-t-m">
 				<h3 class="padding-b-s"><a class="c-theme" href="http://startupstockphotos.com" title="Startup Stock Photos">markd</a></h3>
 				<p>A tiny markdown editor in your browser that works offline.</p>
 			</div>
-			<div class="col s1 s12_m s25_l margin-v-m">
+			<div class="col s1 s12_m s25_l margin-t-m">
 				<h3 class="padding-b-s"><a class="c-theme" href="http://startupstockphotos.com" title="Startup Stock Photos">Gesso</a></h3>
 				<p>A little Jekyll theme built for blogging.</p>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="block bg-c-g1 padding-a-m padding-a-l_m padding-a-xl_l">
-	<h3 class="c-g2 padding-b-l"><a href="/writings" class="c-g2">WRITINGS</a></h3>
+<section class="block bg-c-g1 padding-h-m padding-v-l padding-a-l_xs padding-a-xl_l">
+	<h3 class="c-g2 padding-b-m padding-b-l_m"><a href="/writings" class="c-g2">WRITINGS</a></h3>
 	{% for post in site.posts limit: 3 %}
-		<article class="post--listing block padding-v-l">
-			<h5 class="c-g-3 font-w-0 padding-b-xs">{{ post.date | date: '%B %d, %Y' }}</h5>
-			<a class="c-theme post__title padding-b-xs s23_xl" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><h2>{{ post.title }}</h2></a>
-			<p class="s1 s23_l s12_xxl">{{ post.excerpt }}</p>
-		</article>
+		{% include blog/post.html %}
 	{% endfor %}
 </section>

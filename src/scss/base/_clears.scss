@@ -1,0 +1,28 @@
+.clear-l {
+	clear: left;
+}
+@media (min-width: $breakpoint-xs){
+	.clear-l_xs {
+		clear: left;
+	}
+}
+@media (min-width: $breakpoint-s){
+	.clear-l_s {
+		clear: left;
+	}
+}
+@media (min-width: $breakpoint-m){
+	.clear-l_m {
+		clear: left;
+	}
+}
+@media (min-width: $breakpoint-l){
+	.clear-l_l {
+		clear: left;
+	}
+}
+@media (min-width: $breakpoint-xl){
+	.clear-l_xl {
+		clear: left;
+	}
+}
