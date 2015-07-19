@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<main class="section bg-c-g1">
+	<div class="grid--m">
+		<div class="row">
+			<div class="section__title block"><h2 class="h4 font-w-9 c-g2"><a href="{{site.url}}" class="breadcrumb__link c-theme">HOME</a> / <a class="c-theme" href="{{site.url}}/words">WORDS</a> / {{ page.breadcrumb }}</h2></div>
+
+			<article class="post rte">
+				<time class="h4 c-g2 font-w-9" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %d, %Y' }}</time>
+				<h1 class="h0">{{ page.title }}</h1>
+				{{ content }}
+			</article>
+		</div>
+		<footer class="post__foot block">
+			<a href="{{site.url}}/{{site.permalink_base}}" class="button--ghost inline"><i class="icon-arrow-left"></i>&nbsp;&nbsp;ALL POSTS</a><a href="{{site.url}}" class="button inline">HOME</a> 
+		</footer>
+	</div>
+</main>

@@ -1,72 +1,39 @@
-# PERSONALIZATION SETTINGS
-# These strings support HTML
-author: "@estrattonbailey"
-title: "ESTRATTONBAILEY"
+# SITE SETTINGS
+homepage_title: Eric Bailey
+homepage_headline: "A Developer Who Stil Calls Himself a Designer"
+homepage_description: "Eric Bailey is a lover of simplicity and a maker of quality things. He enjoys being a teammate, learning, and seasonal beer offerings. Always from Iowa, currently from NYC."
+# META
+site_title: "Eric Bailey | Designer & Developer"
+site_author: estrattonbailey
+site_description: "Eric Bailey is a lover of simplicity and a maker of quality things. He enjoys being a teammate, learning, and seasonal beer offerings. Always from Iowa, currently from NYC."
+site_keywords: "designer, developer"
+# CUSTOMIZE 
+color_theme: nominal # only one theme right now, sry
+# SOCIAL
+social_twitter: http://twitter.com/estrattonbailey
+social_instagram: http://instagram.com/estrattonbailey
+social_github: http://github.com/estrattonbailey
+social_dribbble: http://dribbble.com/estrattonbailey
 
-# SOCIAL SETTINGS
-# Fill these in with your URLs and simply un-comment them to enable
+
+# JEKYLL - Misc
 #
-# social_map: "google maps URL"
-# social_website: "your website URL"
-social_twitter: "http://twitter.com/estrattonbailey"
-social_facebook: "http://facebook.com/astronautpopsicle"
-social_instagram: "http://instagram.com/estrattonbailey"
-social_github: "http://github.com/estrattonbailey"
-social_dribbble: "http://dribbble.com/estrattonbailey"
-# social_soundcloud: "http://soundcloud.com/estrattonbailey"
-# social_youtube: "http://youtube.com/estrattonbailey"
-# social_vimeo: "http://vimeo.com/estrattonbailey"
-# social_flickr: "http://flickr.com/estrattonbailey"
-# social_foursquare: "http://foursquare.com/estrattonbailey"
-# social_pinterest: "http://pinterest.com/estrattonbailey"
-# social_tumblr: "http://tumblr.com/estrattonbailey"
-# social_googleplus: "http://google.com/estrattonbailey"
-
-
-
-# # # # # #
-# JEKYLL SETTINGS
-#
-
+source: _src/
 # Web Server Settings
 # url: "http://localhost:4000"
 url: "http://estrattonbailey.com"
 
 # Hide these files from jekyll build process.
-exclude: [README.md, scss/, raw/, style.css.map]
-
-# Pagination settings.
-# More info: http://jekyllrb.com/docs/pagination/
+exclude: [README.md]
+# Blog pagination settings.
 paginate: 8
-paginate_path: writings/page-:num
-
+paginate_path: words/page-:num
 # Permalink setting for posts.
-permalink: writings/:title
-
-
-
-# Markdown Processors
-markdown: kramdown
-highlighter: pygments
-
-rdiscount:
-  extensions: []
-
-redcarpet:
-  extensions: []
-
-kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-  coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         4
-    coderay_bold_every:        10
-    coderay_css:               style
+permalink: words/:title
+permalink_base: words/
+# Build settings
+markdown: redcarpet
+# Sass Settings
+sass:
+  sass_dir: _scss
+  style: :compact
